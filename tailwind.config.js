@@ -6,9 +6,16 @@ export default {
     extend: {
       fontFamily:{
         bebas:[ 'Nunito Sans', 'sans-serif']
+      
+      
     },
   },
+  theme:{
+    extend: {colors: {primmary:"#0d6efd"}},
+  },
+
   plugins: [],
 
 }
-}
+};
+

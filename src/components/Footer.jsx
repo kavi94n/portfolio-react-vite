@@ -1,87 +1,61 @@
-// src/components/Footer.jsx
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollToTopBtn = document.getElementById('scroll-to-top');
-      if (window.scrollY > 200) {
-        scrollToTopBtn.style.display = 'block';
-      } else {
-        scrollToTopBtn.style.display = 'none';
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <footer className="bg-black text-white py-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
-        {/* Developer Info */}
+    <footer className="bg-black text-white p-4">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
         <div>
-          <h4 className="text-xl font-bold mb-2">John Doe</h4>
-          <p>123 Rue Imaginaire, 75000 Paris, France</p>
-          <p>Téléphone: +33 1 23 45 67 89</p>
-          <div className="flex space-x-4 mt-4">
-            <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-gray-400">
+          <h3 className="font-bold text-xl mb-2">Sivalingam kavirajh</h3>
+          <p>210 Ave du 8 mai 1945, 93150 Le blanc mesnil</p>
+          <p>06 05 69 85 61</p>
+          <div className="flex space-x-4 mt-2">
+            <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">
               <FaGithub size="1.5em" />
             </a>
-            <a href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-gray-400">
+            <a href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer">
               <FaTwitter size="1.5em" />
             </a>
-            <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer nofollow" className="hover:text-gray-400">
+            <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size="1.5em" />
             </a>
           </div>
         </div>
-
-       
         <div>
-          <h4 className="text-xl font-bold mb-2">Pages</h4>
+          <h3 className="font-bold text-xl mb-2">Navigation</h3>
           <ul>
-            <li><a href="#home" className="hover:text-gray-400">Home</a></li>
-            <li><a href="#services" className="hover:text-gray-400">Services</a></li>
-            <li><a href="#contact" className="hover:text-gray-400">Contact</a></li>
+            <li><a href="/" className="hover:underline">Home</a></li>
+            <li><a href="/services" className="hover:underline">Services</a></li>
+            <li><a href="/contact" className="hover:underline">Contact</a></li>
+            <li><a href="/mentions-legales" className="hover:underline">Mentions Légales</a></li>
           </ul>
         </div>
-
         <div>
-          <h4 className="text-xl font-bold mb-2">Réalisations</h4>
+          <h3 className="font-bold text-xl mb-2">Dernières Réalisations</h3>
           <ul>
-            <li><a href="#project1" className="hover:text-gray-400">Projet 1</a></li>
-            <li><a href="#project2" className="hover:text-gray-400">Projet 2</a></li>
-            <li><a href="#project3" className="hover:text-gray-400">Projet 3</a></li>
+            <li><a href="/realisation1" className="hover:underline">Réalisation 1</a></li>
+            <li><a href="/realisation2" className="hover:underline">Réalisation 2</a></li>
+            <li><a href="/realisation3" className="hover:underline">Réalisation 3</a></li>
           </ul>
         </div>
-
-        
         <div>
-          <h4 className="text-xl font-bold mb-2">Articles de Blog</h4>
+          <h3 className="font-bold text-xl mb-2">Derniers Articles</h3>
           <ul>
-            <li><a href="#article1" className="hover:text-gray-400">Article 1</a></li>
-            <li><a href="#article2" className="hover:text-gray-400">Article 2</a></li>
-            <li><a href="#article3" className="hover:text-gray-400">Article 3</a></li>
+            <li><a href="/article1" className="hover:underline">Article 1</a></li>
+            <li><a href="/article2" className="hover:underline">Article 2</a></li>
+            <li><a href="/article3" className="hover:underline">Article 3</a></li>
           </ul>
         </div>
       </div>
-      <div className="container mx-auto mt-8 border-t border-gray-700 pt-4 flex justify-between items-center">
-        <p>&copy; 2024 John Doe. Tous droits réservés.</p>
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="hover:text-gray-400 transition"
-          id="scroll-to-top"
-          style={{ display: 'none' }}
-        >
-          Retour en haut
-        </button>
+      <div className="text-justisy-between mt-4">
+        <p>&copy; 2024 Sivalingam kavirajh. Tous droits réservés.</p>
+        <a href="#top" className="text-blue-500 hover:underline">Retour en haut</a>
       </div>
     </footer>
   );
 };
 
 export default Footer;
+

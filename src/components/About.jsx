@@ -1,4 +1,3 @@
-
 import React from 'react';
 import maphoto from '../assets/pic.webp';
 
@@ -17,11 +16,11 @@ const About = () => {
         </div>
         <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-semibold mb-2">Développement Mobile</h3>
-          <p>React Native, Flutter</p>
+          <p>React Native</p>
         </div>
         <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-semibold mb-2">Back-end</h3>
-          <p>Node.js, Express, MongoDB</p>
+          <p>Node.js</p>
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,11 +11,11 @@ const Navbar = () => {
           SIVALINGAM Kavirajh
         </div>
         <div className="hidden md:flex space-x-4">
-          <a href="#Accueil" className="text-white hover:text-gray-300 font-bebas">ACCUEIL</a>
-          <a href="#Service" className="text-white hover:text-gray-300 font-bebas">SERVICE</a>
-          <a href="#Réalisation" className="text-white hover:text-gray-300 font-bebas">REALISATION</a>
-          <a href="#Blog" className="text-white hover:text-gray-300 font-bebas">BLOG</a>
-          <a href="#Me contacter " className="text-white hover:text-gray-300 font-bebas">ME CONTACTER</a>
+          <NavLink to="/" exact className="text-white hover:text-gray-300 font-bebas" activeClassName="text-blue-500">ACCUEIL</NavLink>
+          <NavLink to="/service" className="text-white hover:text-gray-300 font-bebas" activeClassName="text-blue-500">SERVICE</NavLink>
+          <NavLink to="/realisation" className="text-white hover:text-gray-300 font-bebas" activeClassName="text-blue-500">REALISATION</NavLink>
+          <NavLink to="/blog" className="text-white hover:text-gray-300 font-bebas" activeClassName="text-blue-500">BLOG</NavLink>
+          <NavLink to="/contact" className="text-white hover:text-gray-300 font-bebas" activeClassName="text-blue-500">ME CONTACTER</NavLink>
         </div>
         <div className="md:hidden">
           <button
@@ -28,11 +28,11 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <a href="#Accueil" className="block px-4 py-2 text-white hover:bg-gray-700">ACCUEIL</a>
-          <a href="#Service" className="block px-4 py-2 text-white hover:bg-gray-700">SERVICE</a>
-          <a href="#Réalisation" className="block px-4 py-2 text-white hover:bg-gray-700">REALISATION</a>
-          <a href="#Blog" className="block px-4 py-2 text-white hover:bg-gray-700">BLOG</a>
-          <a href="#contacter" className="block px-4 py-2 text-white hover:bg-gray-700">ME CONTACTER</a>
+          <NavLink to="/" exact className="block px-4 py-2 text-white hover:bg-gray-700" onClick={() => setIsOpen(false)}>ACCUEIL</NavLink>
+          <NavLink to="/service" className="block px-4 py-2 text-white hover:bg-gray-700" onClick={() => setIsOpen(false)}>SERVICE</NavLink>
+          <NavLink to="/realisation" className="block px-4 py-2 text-white hover:bg-gray-700" onClick={() => setIsOpen(false)}>REALISATION</NavLink>
+          <NavLink to="/blog" className="block px-4 py-2 text-white hover:bg-gray-700" onClick={() => setIsOpen(false)}>BLOG</NavLink>
+          <NavLink to="/contact" className="block px-4 py-2 text-white hover:bg-gray-700" onClick={() => setIsOpen(false)}>ME CONTACTER</NavLink>
         </div>
       )}
     </nav>
@@ -40,3 +40,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
