@@ -36,7 +36,7 @@ const Realisation = () => {
         <img src={Banner} alt="kavi" />
       </div>
       <div className='flex-row'>
-      <h2 className="text-3xl font-bold mt-6 mb-8 text-center">PORTFOLIO</h2>
+      <h2 className="text-3xl font-semi-bold mt-6 mb-2 text-center">PORTFOLIO</h2>
       <p className='text-center'>Voici quelques-unes de mes réalisation</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2  border-gray-500 lg:grid-cols-3 gap-8 py-10 px-20">
@@ -52,10 +52,10 @@ const Realisation = () => {
             />
             <div className=" grid grid-row ">
               <h3 className="text-xl text-center font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-600 text-center">{project.description}</p>
+              <p className="text-gray-600 text-center mb-2">{project.description}</p>
              
               <button
-                className=" mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition duration-300 transform hover:scale-105"
+                className=" flex justify-center rounded  mx-40 text-white bg-blue-500 py-1"
               >
                 Voir
               </button>
