@@ -57,13 +57,16 @@ const Blog = () => {
 
   return (
     <div className="">
-       <div className='flex w-screen'>
+       <div className='flex'>
         <img src={Banner} alt="kavi" />
       </div>
-      <h2 className="text-3xl pt-8 font-semi-bold mb-3 text-center">BLOG</h2>
-      <p className='flex justify-center '>
-        Retrouvez ici quelques articles sur le développement
-      </p>
+      <div className='flex justify-center flex-col'>
+        <h2 className="text-3xl pt-8 font-semi-bold mb-3 text-center">BLOG</h2>
+        <p className='flex justify-center underline underline-offset-8 decoration-blue-500 decoration-4  '>
+          Retrouvez ici quelques articles sur le développement
+        </p>
+        
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-12 px-24">
         {blogPosts.map((post) => (
           <div key={post.id} className="bg-white shadow-md rounded-lg overflow-hidden">

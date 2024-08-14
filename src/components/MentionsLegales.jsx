@@ -13,15 +13,15 @@ const MentionsLegales = () => {
           <details className="p-4 border rounded-lg">
             <summary className="cursor-pointer text-lg font-semibold">L’éditeur du site</summary>
             <div className="mt-2">
-              <p>Nom: John Doe</p>
-              <p>Adresse: 123 Rue Imaginaire, 75000 Paris, France</p>
-              <p>Email: johndoe@example.com</p>
+              <p>Nom: sivalingam kavirajh</p>
+              <p>210 Av du 8 mai 1945, 93150 le blanc mesnil</p>
+              <p>Email: sivalingam@example.com</p>
             </div>
           </details>
           <details className="p-4 border rounded-lg">
             <summary className="cursor-pointer text-lg font-semibold">L’hébergeur du site</summary>
             <div className="mt-2">
-              <p>Nom: Hosting Company</p>
+              <p>Nom: </p>
               <p>Adresse: 456 Avenue Hôte, 75001 Paris, France</p>
               <p>Email: hosting@example.com</p>
             </div>
