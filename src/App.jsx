@@ -9,9 +9,13 @@ import Service from './components/Service';
 import MentionsLegales from './components/MentionsLegales';
 import Realisation from './components/Realisation';
 import Blog from './components/Blog';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
+
+
+    
     <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
