@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+
 
 
 const Footer = () => {
@@ -12,13 +12,13 @@ const Footer = () => {
           <p>210 Ave du 8 mai 1945, 93150 Le blanc mesnil</p>
           <p>06 05 69 85 61</p>
           <div className="flex space-x-4 mt-2">
-            <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/kavi94n" target="_blank" rel="noopener noreferrer">
               <FaGithub size="1.5em" />
             </a>
-            <a href="https://twitter.com/johndoe" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <FaTwitter size="1.5em" />
             </a>
-            <a href="https://linkedin.com/in/johndoe" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size="1.5em" />
             </a>
           </div>
