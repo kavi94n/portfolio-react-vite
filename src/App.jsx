@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import navbar from './components/Navbar';
 import About from './components/About';
 import Home from './components/Home';
 import Contact from './components/Contact';
@@ -42,7 +42,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+        <navbar />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
