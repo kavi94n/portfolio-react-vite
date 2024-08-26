@@ -5,9 +5,9 @@ const About = () => {
   return (
     <div id="about" className="container drop-shadow-md mx-auto bg-white md:w-3/4 px-12 py-6 mt-8 flex flex-col mb-8 md:flex-row">
       <div className="md:w-1/2 mb-8 md:mb-0">
-        <h2 className="text-3xl font-semi-bold mb-4 text-left">À propos de moi</h2>
+        <h2 className="text-3xl font-Nuni font-semibold mb-4 text-left"><strong>À propos de moi</strong></h2>
         <div className="h-1 bg-blue-600 mr-2 mb-6"></div>
-        <p className="text-lg mb-6">
+        <p className="text-lg  font-normal font-Nuni mb-6">
           Je suis un développeur passionné avec des compétences variées en développement web et mobile. J'aime créer des applications intuitives et performantes.
         </p>
       </div>

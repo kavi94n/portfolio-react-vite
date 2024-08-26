@@ -61,8 +61,8 @@ const Blog = () => {
         <img src={Banner} alt="kavi" />
       </div>
       <div className='flex justify-center flex-col'>
-        <h2 className="text-3xl pt-8 font-semi-bold mb-3 text-center">BLOG</h2>
-        <p className='flex justify-center underline underline-offset-8 decoration-blue-500 decoration-4  '>
+        <h2 className="text-3xl pt-8 font-Nuni font-semibold mb-3 text-center"><strong>BLOG</strong></h2>
+        <p className='flex justify-center font-normal font-Nuni underline underline-offset-8 decoration-blue-500 decoration-4  '>
           Retrouvez ici quelques articles sur le développement
         </p>
         
@@ -74,10 +74,10 @@ const Blog = () => {
             <div className="">
               <h1 className="text-xl font-semibold mb-2 pl-4 pt-2">{post.title}</h1>
               <p className="text-gray-700 pl-4">{post.summary}</p>
-              <button className=' m-4 bg-blue-500 text-white rounded py-1 px-2 mt-2 mb-2'>
+              <button className=' m-4 bg-blue-500 text-white font-normal font-Nuni rounded py-1 px-2 mt-2 mb-2'>
               Lire la suite
               </button>
-              <p className="text-s bg-slate-50 pl-4 pb-0 border-1 border w-screen py-2">
+              <p className="text-s font-normal font-Nuni bg-slate-50 pl-4 pb-0 border-1 border w-screen py-2">
                 Publié le  {post.date}
               </p>
             </div>

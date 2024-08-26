@@ -28,8 +28,8 @@ const Services = () => {
       </div>
   
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-4">MON OFFRE DE SERVICE</h2>
-        <p className="underline underline-offset-8 decoration-blue-500 decoration-4 mb-8">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4"><strong>MON OFFRE DE SERVICE</strong></h2>
+        <p className="underline underline-offset-8 decoration-blue-500 decoration-4 font-normal mb-8">
           Voici les prestations sur lesquelles je peux intervenir.
         </p>
 
@@ -40,7 +40,7 @@ const Services = () => {
               <div className="text-blue-500 hover:text-[#cde1f8] transition mb-4 flex justify-center">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-semi-bold mb-2">{service.title}</h3>
+              <h3 className="text-2xl font-Nuni font-semibold mb-2"><strong>{service.title}</strong></h3>
               <p>{service.description}</p>
             </div>
           ))}

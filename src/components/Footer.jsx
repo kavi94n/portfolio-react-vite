@@ -8,8 +8,8 @@ const Footer = () => {
     <footer className="bg-slate-100 text-black">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 p-4 px-24">
         <div>
-          <h3 className="font-bold text-xl mb-2">Sivalingam kavirajh</h3>
-          <p>210 Ave du 8 mai 1945, 93150 Le blanc mesnil</p>
+          <h3 className="font-semibold font-Nuni text-xl mb-2">Sivalingam kavirajh</h3>
+          <p className='font-normal'>210 Ave du 8 mai 1945, 93150 Le blanc mesnil</p>
           <p>06 05 69 85 61</p>
           <div className="flex space-x-4 mt-2">
            
@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <h3 className="font-bold text-xl mb-2">Liens utiles</h3>
+          <h3 className="font-semibold text-xl mb-2">Liens utiles</h3>
           <ul>
             <li><a href="/" className="hover:underline">Home</a></li>
             <li><a href="/services" className="hover:underline">Services</a></li>
@@ -34,7 +34,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="font-bold text-xl mb-2">Mes Dernières Réalisations</h3>
+          <h3 className="font-semibold text-xl mb-2">Mes Dernières Réalisations</h3>
           <ul>
             <li><a href="/realisation1" className="hover:underline">Fresh food</a></li>
             <li><a href="/realisation2" className="hover:underline">Restaurant Akira</a></li>
@@ -42,7 +42,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <h3 className="font-bold text-xl mb-2">Mes Derniers Articles</h3>
+          <h3 className="font-semibold text-xl mb-2">Mes Derniers Articles</h3>
           <ul>
             <li><a href="/article1" className="hover:underline">Article 1</a></li>
             <li><a href="/article2" className="hover:underline">Article 2</a></li>
@@ -50,7 +50,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="text-center align-middle h-16 mt-4 mb-4 text-white md:w-screen bg-black ">
+      <div className="text-center font-normal align-middle h-16 mt-4 mb-4 text-white md:w-screen bg-black ">
         <p className='py-4'>&copy; Designed by Sivalingam kavirajh</p>
       </div>
     </footer>

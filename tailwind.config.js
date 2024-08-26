@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        bebas:[ 'Nunito Sans', 'sans-serif']
+        Nuni:[ 'Nunito Sans', 'sans-serif']
       
       
     },

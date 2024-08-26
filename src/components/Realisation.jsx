@@ -33,13 +33,13 @@ const Realisation = () => {
 
   return (
    
-    <div className="">
+    <div className="font-Nuni">
       <div className='flex'>
         <img src={Banner} alt="kavi" />
       </div>
       <div className='flex flex-col'>
         <div>
-        <h2 className="text-3xl font-semi-bold mt-6 mb-2 text text-center">PORTFOLIO</h2>
+        <h2 className="text-3xl font-semibold mt-6 mb-2 text text-center"><strong>PORTFOLIO</strong></h2>
         <p className='text-center underline underline-offset-8 decoration-blue-500 decoration-4 '>Voici quelques-unes de mes réalisation</p>
         </div>
         </div>
@@ -56,7 +56,7 @@ const Realisation = () => {
             />
             <div className=" grid grid-row ">
               <h3 className="text-xl text-center font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-600 text-center mb-2">{project.description}</p>
+              <p className="text-gray-600 font-normal text-center mb-2">{project.description}</p>
              
               <button
                 className=" flex justify-center border border-blue-500 rounded  mx-40 text-blue-500 py-1"

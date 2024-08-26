@@ -20,11 +20,11 @@ const Home = () => {
 
     ></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
-        <h1 className="text-4xl font-bold mb-4">SIVALINGAM KAVIRAJH</h1>
-        <h2 className="text-2xl mb-8">développeur web</h2>
+        <h1 className="text-4xl font-Nuni font-semibold  mb-4"><strong>SIVALINGAM KAVIRAJH</strong></h1>
+        <h2 className="text-2xl font-semibold font-Nuni mb-8">développeur web</h2>
         <Link
           to="/about"
-          className="px-6 py-3  bg-blue-500 text-white rounded-lg transition duration-300"
+          className="px-6 py-3 font-normal  bg-blue-500 text-white rounded-lg transition duration-300"
         >
           En savoir plus
         </Link>
